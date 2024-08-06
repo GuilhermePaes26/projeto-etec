@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTPS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"> <!-- Certifique-se de que o caminho está correto -->
+</head>
+<body>
+    <section class="introduction">
+        <p>Hypertext Transfer Protocol Secure (Protocolo de Transferência de Hipertexto Seguro), é uma extensão do HTTP que adiciona uma camada de segurança. A principal diferença entre HTTP e HTTPS é que HTTPS criptografa a comunicação entre o cliente e o servidor, garantindo maior segurança e privacidade.</p>
+    </section>
+    <section class="container">
+        <div class="text-content">
+            <h1>O que é HTTPS?</h1>
+            <p>HTTPS utiliza criptografia para proteger a troca de dados entre o navegador (ou outro cliente) e o servidor web. Isso impede que os dados sejam interceptados e lidos por terceiros durante a transmissão.</p>
+            <p>A criptografia é proporcionada por certificados digitais, que são emitidos por autoridades certificadoras (CA). Esses certificados usam protocolos SSL (Secure Sockets Layer) ou TLS (Transport Layer Security) para criptografar os dados.</p>
+        </div>
+        <div class="text-content">
+            <h1>Como Funciona?</h1>
+            <p>Negociação do Certificado: Quando um cliente se conecta a um servidor via HTTPS, o servidor envia seu certificado digital. O cliente verifica a validade do certificado através da CA que o emitiu.</p>
+            <p>Troca de Chaves: Uma vez validado, o cliente e o servidor trocam chaves criptográficas para estabelecer uma sessão segura.</p>
+            <p>Criptografia Simétrica e Assimétrica: HTTPS usa criptografia assimétrica para estabelecer uma conexão segura (envolve chaves públicas e privadas) e criptografia simétrica para a comunicação real (usa a mesma chave para criptografar e descriptografar dados).</p>
+            <p>Além da criptografia, HTTPS também usa técnicas para garantir que os dados não foram alterados durante a transmissão.</p>
+            <p>O certificado digital ajuda a autenticar a identidade do servidor, assegurando que o cliente está realmente se conectando ao servidor correto e não a um impostor.</p>
+        </div>
+    </section>
+    <section class="desenvolvimento">
+        <h1>Importância do HTTPS</h1>
+        <ul>
+            <li>HTTPS é crucial para proteger dados sensíveis como informações pessoais, dados de cartões de crédito e credenciais de login.</li>
+            <li>Navegadores modernos exibem indicadores visuais, como cadeado na barra de endereços, para mostrar que a conexão é segura. Isso ajuda a aumentar a confiança dos usuários no site.</li>
+            <li>O Google e outros motores de busca consideram o HTTPS como um fator de classificação positivo, o que pode melhorar a visibilidade do site. Além disso, HTTPS pode oferecer desempenho melhor com HTTP/2.</li>
+        </ul>
+    </section>
+    <section class="desenvolvimento2">
+        <h1>Identificadores de HTTPS</h1>
+        <ul>
+            <li>URL com HTTPS: Começa com https:// em vez de http://.</li>
+            <li>Ícone de Cadeado: Em navegadores, um cadeado fechado na barra de endereços indica que a conexão é segura.</li>
+            <li>Certificado SSL/TLS: Pode ser visualizado clicando no cadeado na barra de endereços, mostrando detalhes sobre o certificado e a entidade emissora.</li>
+        </ul>
+    </section>
+    <section class="final">
+        <h1>Exemplos de Uso</h1>
+        <p>Sites Bancários, onde a segurança é crítica para proteger informações financeiras, em compras online para garantir que as transações de cartão de crédito sejam seguras e em login e registro de usuários, em plataformas que requerem informações pessoais ou credenciais de usuário.</p>
+    </section>
+</body>
+</html>

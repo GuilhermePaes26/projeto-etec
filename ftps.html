@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTPS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"> <!-- Certifique-se de que o caminho está correto -->
+</head>
+<body>
+    <section class="introduction">
+        <p>FTPS, ou FTP Secure, é uma extensão do protocolo FTP (File Transfer Protocol) que adiciona uma camada de segurança por meio da criptografia. Ele é projetado para proteger a transferência de arquivos através de redes, garantindo que os dados e credenciais estejam protegidos contra interceptação e acesso não autorizado.</p>
+    </section>
+    <section class="container">
+        <div class="text-content">
+            <h1>O que é FTPS?</h1>
+            <p>FTPS é essencialmente o FTP com segurança adicional. Ele utiliza criptografia para proteger os dados e as credenciais durante a comunicação entre cliente e servidor.</p>
+            <p>FTPS usa protocolos SSL (Secure Sockets Layer) ou TLS (Transport Layer Security) para criptografar a comunicação. Essa criptografia garante a confidencialidade e integridade dos dados transmitidos.</p>
+        </div>
+        <div class="text-content">
+            <h1>Como Funciona o FTPS?</h1>
+            <p>Estabelecimento da Conexão Segura: Porta de Controle: FTPS geralmente usa a mesma porta de controle (porta 21) do FTP, mas a comunicação é criptografada após o estabelecimento da conexão. Portas de Dados: As portas usadas para a transferência de dados podem variar e dependem do modo de operação (ativo ou passivo).</p>    
+            <p>Modos de Conexão: Modo Ativo: O cliente abre uma porta para receber dados e o servidor se conecta a essa porta. No FTPS ativo, a comunicação de dados é criptografada. Modo Passivo: O servidor abre uma porta para a comunicação de dados e o cliente se conecta a essa porta. No FTPS passivo, a porta de dados também é criptografada.</p>
+        </div>
+    </section>
+    <section class="desenvolvimento">
+        <h1>Características do FTPS</h1>
+        <ul>
+            <li>Confidencialidade: Os dados transmitidos são criptografados, o que impede que sejam lidos por terceiros.</li>
+            <li>Integridade: A criptografia protege os dados contra alterações durante a transmissão.</li>
+            <li>Autenticação: O uso de certificados digitais para autenticar o servidor e, opcionalmente, o cliente, garantindo que as partes envolvidas na comunicação são quem afirmam ser.</li>
+        </ul>
+    </section>
+    <section class="desenvolvimento2">
+        <h1>Compatibilidade com FTPS:</h1>
+        <ul>
+            <li>FTPS é compatível com clientes e servidores FTP existentes, mas requer que ambos suportem SSL/TLS para fornecer segurança.</li>
+        </ul>
+        <ul>
+            <li>FTPS Explícito (Explicit FTPS): O cliente inicia a conexão FTP padrão e depois solicita a segurança (SSL/TLS) através de um comando. O servidor e o cliente estabelecem a criptografia antes da transmissão de dados.</li>
+            <li>FTPS Implícito (Implicit FTPS): A conexão é automaticamente criptografada desde o início. Geralmente usa uma porta diferente, como a 990, para a comunicação criptografada.</li>
+        </ul>
+    </section>
+    <section class="table">
+        <h1>Comandos FTPS</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Comando</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>USER</td>
+                    <td>Fornece o nome de usuário para autenticação no servidor.</td>
+                </tr>
+                <tr>
+                    <td>PASS</td>
+                    <td>Fornece a senha para autenticação no servidor.</td>
+                </tr>
+                <tr>
+                    <td>LIST</td>
+                    <td>Lista os arquivos e diretórios no diretório atual do servidor.</td>
+                </tr>
+                <tr>
+                    <td>RETR</td>
+                    <td>Recupera (baixa) um arquivo do servidor para o cliente.</td>
+                </tr>
+                <tr>
+                    <td>STOR</td>
+                    <td>Armazena (envia) um arquivo do cliente para o servidor.</td>
+                </tr>
+                <tr>
+                    <td>PWD</td>
+                    <td>Mostra o diretório de trabalho atual no servidor.</td>
+                </tr>
+                <tr>
+                    <td>CWD</td>
+                    <td>Muda o diretório de trabalho no servidor.</td>
+                </tr>
+                <tr>
+                    <td>DELE</td>
+                    <td>Remove (deleta) um arquivo no servidor.</td>
+                </tr>
+                <tr>
+                    <td>MKD</td>
+                    <td>Cria um novo diretório no servidor.</td>
+                </tr>
+                <tr>
+                    <td>RMD</td>
+                    <td>Remove (deleta) um diretório no servidor.</td>
+                </tr>
+                <tr>
+                    <td>ABOR</td>
+                    <td>Aborta a operação em andamento (por exemplo, uma transferência de arquivo).</td>
+                </tr>
+                <tr>
+                    <td>QUIT</td>
+                    <td>Encerra a sessão FTP com o servidor.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="final">
+        <h1>Importância na Web</h1>
+        <p>FTPS é crucial para garantir a segurança na transferência de arquivos na web, oferecendo criptografia e autenticação para proteger os dados e credenciais durante a comunicação entre cliente e servidor.</p>
+    </section>
+</body>
+</html>

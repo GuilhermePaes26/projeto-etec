@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <!-- Certifique-se de que o caminho está correto -->
+  </head>
+  <body>
+    <section class="container">
+      <div class="text-content">
+        <h1>O que é JSP?</h1>
+        <p>JSP (JavaServer Pages) é uma tecnologia de desenvolvimento web da Oracle que permite a criação de páginas web dinâmicas com o uso da linguagem de programação Java.</p>
+        <p>É amplamente usada para gerar conteúdo dinâmico em aplicações web.</p>
+      </div>
+      <div class="text-content">
+        <h1>Como Funciona o jsp?</h1>
+
+        <p>
+          <strong>Criação da Página JSP:</strong>Você cria uma página JSP com a extensão .jsp, que contém HTML e código Java. O código Java é escrito dentro de tags especiais, como % %>, %= %>, e %!
+          %>.
+        </p>
+        <p>
+          <strong>Processamento do JSP:</strong>Quando um cliente faz uma requisição para uma página JSP, o servidor web (como Apache Tomcat) processa essa página. O servidor compila o código JSP em
+          um servlet Java, que é uma classe Java que pode gerar conteúdo web dinâmico.
+        </p>
+        <p>
+          <strong>Execução do Servlet:</strong> O servlet gerado é então executado pelo servidor. O código Java dentro da página JSP é executado e o resultado é combinado com o HTML para gerar a
+          página final que é enviada ao cliente.
+        </p>
+        <p><strong>Envio de Resposta:</strong>O servidor envia a página final (agora uma página HTML) para o navegador do cliente.</p>
+      </div>
+    </section>
+
+    <section class="desenvolvimento">
+      <h1>Características do JSP</h1>
+      <ul>
+        <li><strong>Spuorte a Servlets e JSP:</strong> JSP permite a separação do código de lógica de negócios do design da interface do usuário, promovendo uma melhor organização do código.</li>
+        <li><strong>Interatividade:</strong>ASP permite a criação de páginas web dinâmicas e interativas que podem responder a entradas do usuário e outras interações.</li>
+        <li><strong>Fácil Integração com Java: </strong>Como o JSP é baseado em Java, ele se integra bem com outros componentes Java, como servlets, beans, e frameworks Java EE.</li>
+        <li>
+          <strong>Suporte a Tags e Bibliotecas: </strong> JSP suporta a utilização de tags personalizadas e bibliotecas de tags, como JSTL (JSP Standard Tag Library), para simplificar a programação e
+          reutilização de código.
+        </li>
+        <li><strong>Escalabilidade e Performance: </strong> JSP é eficiente em termos de desempenho, pois o código é compilado em servlets Java, o que permite uma rápida execução.</li>
+        <li><strong>Suporte a Expressões e Scripts: </strong>JSP permite o uso de expressões, declarações, e scripts para gerar conteúdo dinâmico.</li>
+      </ul>
+    </section>
+
+    <section class="desenvolvimento2">
+      <h1>Compatibilidade com JSP</h1>
+      <ul>
+        <p>
+          <strong
+            >JSP é compatível com a maioria dos servidores de aplicações Java EE, como Apache Tomcat, Jetty, e JBoss. Além disso, o JSP é uma tecnologia padrão definida pela especificação Java
+            Servlet, então qualquer servidor que suporte Java Servlet também suporta JSP. Para garantir compatibilidade e boas práticas, é importante usar uma versão do servidor de aplicação que seja
+            compatível com a versão do JSP que você está utilizando</strong
+          >.
+        </p>
+      </ul>
+    </section>
+
+    <section class="table">
+      <h1>Comandos JSP mais comuns</h1>
+      <table>
+        <tr>
+          <th>Versão</th>
+          <th>Características</th>
+        </tr>
+        <tr>
+          <td>ftp [host]</td>
+          <td>Conecta ao servidor FTP especificado.</td>
+        </tr>
+        <tr>
+          <td>user [username] [password]</td>
+          <td>Faz login no servidor FTP com o nome de usuário e a senha fornecidos.</td>
+        </tr>
+        <tr>
+          <td>ls ou dir</td>
+          <td>Lista os arquivos e diretórios no diretório atual do servidor FTP.</td>
+        </tr>
+        <tr>
+          <td>cd [directory]:</td>
+          <td>Muda o diretório de trabalho no servidor FTP.</td>
+        </tr>
+        <tr>
+          <td>get [filename</td>
+          <td>Baixa um arquivo do servidor FTP para o cliente.</td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>

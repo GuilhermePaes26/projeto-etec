@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>http</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="introduction">
+    <p>Hypertext Transfer Protocol (Protocolo de Transferência de Hipertexto), é um protocolo fundamental na web. Ele é usado para a comunicação entre clientes (como navegadores web) e servidores web.</p>
+    </section>  
+    <section class="container">
+    <div class="text-content">
+    <H1>O que é HTTP?</H1>
+    <p>Protocolo de Comunicação: HTTP é um protocolo de comunicação que permite a transferência de dados entre um cliente e um servidor. Ele é o principal meio pelo qual informações são transmitidas na web.
+
+        Estrutura de Mensagens: HTTP funciona com base em mensagens, que podem ser de dois tipos:</p>
+        
+    <P>Requisições (Requests): Enviadas pelo cliente (por exemplo, um navegador) para o servidor, solicitando recursos como páginas web, imagens ou arquivos.</P>
+    <p>Respostas (Responses): Enviadas pelo servidor de volta ao cliente, contendo os dados solicitados ou informações sobre o status da requisição.</p>
+    </div>
+    <div class="text-content">
+    <h1>Como Funciona?</h1>
+    <p>Requisição do Cliente: Quando você digita uma URL no navegador, o navegador faz uma requisição HTTP ao servidor que hospeda a página. A URL especifica o recurso que o navegador deseja acessar.</p>    
+    <p>Processamento no Servidor: O servidor web recebe a requisição, processa-a e envia de volta uma resposta HTTP. Essa resposta pode incluir o conteúdo da página web (como HTML, CSS e JavaScript) ou mensagens de erro se algo estiver errado.    </p>
+    <p>Resposta do Servidor: O navegador então recebe a resposta e a renderiza, exibindo o conteúdo da página web para você.    </p>
+    </div> 
+    <div class="img-content">
+        <img src="./http.jpg" alt="">
+    </div>   
+    </section>
+    <section class="desenvolvimento">
+    <h1>Componentes de uma requisição</h1>
+    <ul>
+        <li>Linha de Requisição: Contém o método HTTP (como GET, POST), o caminho do recurso solicitado e a versão do protocolo HTTP.</li>
+        <li>Cabeçalhos (Headers): Fornecem informações adicionais sobre a requisição, como tipo de navegador, formato de dados aceito, e outras configurações.</li>
+        <li>Corpo da Requisição (opcional): Usado principalmente com métodos como POST, onde dados adicionais (como formulários preenchidos) são enviados ao servidor.</li>
+    </ul>
+    </section>
+    <section class="desenvolvimento2">
+    <h1>Componentes de uma Resposta HTTP</h1>
+    <ul>
+        <li>Linha de Status: Contém o código de status (como 200 para sucesso, 404 para não encontrado) e uma mensagem associada.</li>
+        <li>Cabeçalhos (Headers): Fornecem informações adicionais sobre a resposta, como tipo de conteúdo, comprimento do conteúdo, e informações de cache.</li>
+        <li><B>Corpo da Resposta:</B> Contém o conteúdo real da resposta, como o HTML da página, imagens, ou outros dados.        </li>
+    </ul>
+    </section>
+    <section class="table">
+        <h1>Versões HTTP</h1>
+    <table>
+        <tr>
+            <th>Versão</th>
+            <th>Características</th>
+        </tr>
+        <tr>
+            <td>HTTP/1.0</td>
+            <td>
+                - Conexão única por requisição<br>
+                - Sem suporte para keep-alive<br>
+                - Simples e limitado
+            </td>
+        </tr>
+            <tr>
+                <td>HTTP/1.1</td>
+                <td>
+                    - Conexões persistentes (keep-alive)<br>
+                    - Pipelining<br>
+                    - Cabeçalhos mais sofisticados e caching melhorado
+                </td>
+            </tr>
+            <tr>
+                <td>HTTP/2</td>
+                <td>
+                    - Multiplexação de requisições<br>
+                    - Compressão de cabeçalhos<br>
+                    - Priorização de streams
+                </td>
+            </tr>
+            <tr>
+                <td>HTTP/3</td>
+                <td>
+                    - Uso de QUIC para reduzir latência<br>
+                    - Melhor desempenho em redes instáveis<br>
+                    - Segurança aprimorada
+                </td>
+            </tr>
+    </table>
+</section>
+<section class="final">
+    <h1>importância na web</h1>
+    <p>HTTP é crucial para o funcionamento da web, pois define como as requisições e respostas são formatadas e transmitidas. Sem HTTP, a comunicação entre navegadores e servidores não seria possível, e a navegação na internet como conhecemos não existiria.</p>
+</section>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomcat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"> <!-- Certifique-se de que o caminho está correto -->
+</head>
+<body>
+
+    
+    <section class="container">
+        <div class="text-content">
+            <h1>O que é Tomcat?</h1>
+            <p>Apache Tomcat é um servidor web e contêiner de servlets de código aberto desenvolvido pela Apache Software Foundation. Ele é utilizado para implementar e servir aplicativos web Java.</p>
+            <p> Tomcat é capaz de executar servlets Java e páginas JSP (JavaServer Pages), proporcionando um ambiente robusto e eficiente para aplicações web baseadas em Java.</p>
+        </div>
+        <div class="text-content">
+            <h1>Como Funciona o Tomcat?</h1>
+            <p>Tomcat funciona como um contêiner de servlets, o que significa que ele fornece um ambiente de tempo de execução para servlets Java e páginas JSP. O processo básico de funcionamento inclui:
+
+            </p>
+            <p><STRONG>Recepção de Solicitações:</STRONG>O servidor Tomcat recebe solicitações HTTP de clientes, geralmente navegadores web.</p>
+            <p><STRONG>Processamento de Servlets:</STRONG>Tomcat carrega e executa servlets Java que respondem a essas solicitações. Servlets são classes Java que processam solicitações e geram respostas dinâmicas.</p>
+            <p><STRONG>Geração de Páginas JSP:</STRONG> Tomcat também compila e executa páginas JSP, que são documentos HTML com código Java embutido. Isso permite a geração de conteúdo dinâmico.
+            </p>
+            <p><STRONG>Envio de Resposta:</STRONG>Tomcat envia as respostas geradas de volta ao cliente, normalmente na forma de páginas HTML, JSON ou outros formatos de dados.</p>
+        </div>
+    </section>
+    
+    <section class="desenvolvimento">
+        <h1>Características do Tomcat</h1>
+        <ul>
+            <li><strong>Suporte a Servlets e JSP:</strong>Tomcat é compatível com as especificações de servlets Java e JSP, permitindo a execução de aplicações web Java dinâmicas.
+            </li>
+            <li><strong>Interatividade:</strong>ASP permite a criação de páginas web dinâmicas e interativas que podem responder a entradas do usuário e outras interações.</li>
+            <li><strong>Código Aberto: <strong>Tomcat é um projeto de código aberto, com uma comunidade ativa de desenvolvedores que contribuem para seu desenvolvimento e manutenção.</li>
+            <li><strong>Escalabilidade: </strong> Tomcat pode ser configurado para suportar um grande número de usuários simultâneos, sendo adequado para aplicações web de grande escala.</li>
+            <li><strong>Modularidade: </strong> Tomcat é modular e pode ser expandido com componentes adicionais para adicionar funcionalidades específicas, como conectores de banco de dados e módulos de segurança.</li>
+            <li><strong>Configuração Flexível: </strong>Tomcat oferece uma ampla gama de opções de configuração, permitindo ajustes detalhados para desempenho, segurança e outras características operacionais.</li>
+            <li><strong>Integração com Ferramentas de Desenvolvimento: </strong> Tomcat é compatível com várias ferramentas de desenvolvimento e ambientes de integração contínua, como Eclipse, IntelliJ IDEA e Jenkins.</li>
+            
+        </ul>
+    </section>
+    
+    <section class="desenvolvimento2">
+        <h1>Compatibilidade com Tomcat</h1>
+        <ul>
+            <li><strong>Java EE:</strong> Suporta os componentes principais das especificações Java EE, incluindo servlets e JSP.
+            </li>
+            <li><strong>Bancos de Dados:</strong>Integra-se com vários bancos de dados através de conectores JDBC, permitindo acesso e manipulação de dados.</li>
+            <li><strong>Frameworks Java:</strong> Compatível com muitos frameworks populares, como Spring, Hibernate, e Struts, facilitando o desenvolvimento de aplicações web complexas.</li>
+            <li><strong>Servidores Web:</strong>
+                Pode ser utilizado em conjunto com outros servidores web, como Apache HTTP Server e Nginx, para balanceamento de carga e outras funcionalidades avançadas.
+            </li>
+            <li><strong>Ferramentas de Desenvolvimento:</strong>Integra-se com IDEs como Eclipse e IntelliJ IDEA, proporcionando um ambiente de desenvolvimento eficiente para aplicações Java.
+            </li>
+            <li><strong>Contêineres e Cloud:</strong>Tomcat pode ser facilmente implantado em contêineres Docker e ambientes de cloud como AWS, Azure e Google Cloud Platform.
+            </li>
+        </ul>
+    </section>
+    <section class="table">
+    <h1>Comandos Tomcat mais comuns</h1>
+    <table>   
+        <tr>
+            <th>Versão</th>
+            <th>Características</th>
+        </tr>
+        <tr>
+            <td>Serviços:</td>
+            <td>
+                Tomcat é composto por vários serviços, incluindo o serviço de conector HTTP, que escuta e responde a solicitações HTTP dos clientes.
+            </td>
+        </tr>
+            <tr>
+                <td>Hosts: </td>
+                <td>
+                    Cada instância do Tomcat pode hospedar vários aplicativos web, organizados em hosts virtuais.
+
+                </td>
+            </tr>
+            <tr>
+                <td>Aplicativos Web:</td>
+                <td>
+                    Tomcat gerencia e executa aplicativos web, que são pacotes WAR (Web Application Archive) contendo servlets, JSPs, bibliotecas e outros recursos.
+                </td>
+            </tr>
+            <tr>
+                <td>Conectores: </td>
+                <td>
+                    Componentes que permitem que Tomcat se comunique com clientes através de diferentes protocolos, como HTTP, HTTPS, e AJP.
+                </td>
+            </tr>
+            <tr>
+                <td>Realms: </td>
+                <td>
+                    Utilizados para gerenciar autenticação e autorização, fornecendo uma camada de segurança para os aplicativos web.
+                </td>
+            </tr>
+        </table>    
+    </section>
+</body>
+</html>

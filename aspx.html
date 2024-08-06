@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASPX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="text-content">
+        <h1>O que é ASPX?</h1>
+        <p>ASPX é a extensão usada para arquivos de páginas web criadas com o ASP.NET, um framework da Microsoft para o desenvolvimento de aplicações web dinâmicas.</p>
+        <p>O ASP.NET é parte do .NET Framework e permite a criação de páginas web que podem gerar conteúdo dinâmico e interativo.</p>
+      </div>
+      <div class="text-content">
+        <h1>Como Funciona o ASPX?</h1>
+        <p>
+          <strong>Criação da Página ASPX:</strong> As páginas ASPX são criadas com a extensão .aspx e podem incluir HTML, controles de servidor ASP.NET e código .NET, geralmente em C# ou VB.NET. O
+          código de backend é geralmente colocado em arquivos de code-behind com a extensão .aspx.cs ou .aspx.vb.
+        </p>
+        <p><strong>Recepção de Solicitações:</strong> O servidor web recebe solicitações HTTP/HTTPS de clientes (normalmente navegadores web).</p>
+        <p>
+          <strong>Processamento no Servidor:</strong> Quando uma requisição é feita para uma página ASPX, o servidor web (geralmente IIS - Internet Information Services) processa essa página. O
+          servidor compila o código da página e do code-behind em assemblies .NET, se necessário, e gera o HTML dinâmico que será enviado ao navegador do cliente.
+        </p>
+        <p>
+          <strong>Execução e Resposta:</strong> O código no backend é executado, processando qualquer lógica necessária e gerando o HTML final. Esse HTML é então enviado para o navegador do cliente,
+          onde será exibido.
+        </p>
+        <p>
+          <strong>Manutenção de Estado:</strong> ASP.NET fornece mecanismos para gerenciar o estado da aplicação e do usuário, como ViewState e SessionState, o que permite que informações sobre o
+          estado de uma página ou usuário sejam preservadas entre requisições.
+        </p>
+      </div>
+    </section>
+
+    <section class="desenvolvimento">
+      <h1>Características do ASPX</h1>
+      <ul>
+        <li>
+          <strong>Integração com o .NET Framework:</strong> ASPX se integra perfeitamente com o .NET Framework, permitindo o uso de toda a funcionalidade do .NET, como bibliotecas de classes e APIs.
+        </li>
+        <li>
+          <strong>Controles de Servidor:</strong> ASPX utiliza controles de servidor que geram HTML e JavaScript dinâmico. Esses controles facilitam a criação de elementos de interface do usuário,
+          como formulários, botões e grids.
+        </li>
+        <li>
+          <strong>Modelo de Programação Orientado a Eventos:</strong> O ASP.NET usa um modelo de programação orientado a eventos, semelhante ao desenvolvimento de aplicações desktop, o que simplifica
+          a programação para desenvolvedores.
+        </li>
+        <li>
+          <strong>Segurança e Autenticação:</strong> ASP.NET oferece diversas opções de segurança, como autenticação e autorização integrada, proteção contra CSRF e XSS, e suporte para práticas
+          recomendadas de segurança.
+        </li>
+        <li>
+          <strong>Suporte a Web Forms e MVC:</strong> Além de Web Forms (baseado em ASPX), o ASP.NET também suporta o modelo MVC (Model-View-Controller), permitindo diferentes abordagens para o
+          desenvolvimento de aplicações web.
+        </li>
+      </ul>
+    </section>
+
+    <section class="desenvolvimento2">
+      <h1>Compatibilidade com ASPX</h1>
+      <ul>
+        <li>
+          <strong>Servidores Web:</strong> Páginas ASPX são executadas em servidores web que suportam ASP.NET, como o Microsoft IIS (Internet Information Services). Também existem soluções de
+          terceiros e serviços de hospedagem que suportam ASP.NET.
+        </li>
+        <li>
+          <strong>Versões do .NET Framework:</strong> A compatibilidade com ASPX depende da versão do .NET Framework instalada no servidor. ASP.NET Web Forms é compatível com .NET Framework 2.0 e
+          versões posteriores, enquanto ASP.NET Core, a versão mais recente do framework, suporta uma abordagem diferente e não usa mais a extensão .aspx para suas páginas.
+        </li>
+      </ul>
+    </section>
+
+    <section class="table">
+      <h1>Comandos ASPX mais comuns</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Comandos</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>asp:Button</td>
+            <td>Representa um botão clicável. Pode ser usado para executar comandos quando clicado.</td>
+          </tr>
+          <tr>
+            <td>asp:Label</td>
+            <td>Exibe texto na página. Pode ser usado para mostrar informações ou rótulos para outros controles.</td>
+          </tr>
+          <tr>
+            <td>asp:TextBox</td>
+            <td>Cria uma caixa de texto onde os usuários podem inserir dados.</td>
+          </tr>
+          <tr>
+            <td>asp:DropDownList</td>
+            <td>Cria uma lista suspensa de opções que o usuário pode selecionar.</td>
+          </tr>
+          <tr>
+            <td>asp:GridView</td>
+            <td>Exibe dados em formato de tabela. Suporta operações como classificação e paginação.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>

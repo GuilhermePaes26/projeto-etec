@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"> <!-- Certifique-se de que o caminho está correto -->
+</head>
+<body>
+    <section class="introduction">
+        <p>File Transfer Protocol (Protocolo de Transferência de Arquivos), é um protocolo de rede usado para transferir arquivos entre um cliente e um servidor através de uma rede, como a Internet ou uma rede local. É uma das formas mais antigas e comuns de transferir arquivos e ainda é amplamente utilizado em diversas aplicações.</p>
+    </section>
+    
+    <section class="container">
+        <div class="text-content">
+            <h1>O que é FTP?</h1>
+            <p>FTP é projetado especificamente para a transferência de arquivos. Permite o upload (envio) e download (recebimento) de arquivos entre um computador (cliente) e um servidor de arquivos.</p>
+            <p>FTP opera sobre o protocolo TCP (Transmission Control Protocol), garantindo que os dados sejam entregues de forma confiável e em ordem.</p>
+        </div>
+        <div class="text-content">
+            <h1>Como Funciona o FTP?</h1>
+            <p>Portas: FTP usa duas portas TCP principais: a porta 21 para o controle da conexão e a porta 20 para a transferência de dados em modo ativo. No modo passivo, a porta para a transferência de dados é negociada dinamicamente.</p>
+            <p>Autenticação: O cliente se conecta ao servidor FTP na porta 21 e fornece um nome de usuário e senha para autenticação. Embora FTP suporte autenticação básica, não criptografa as credenciais e dados por padrão.</p>
+            <p>Modo Ativo: O cliente abre uma porta para receber dados e o servidor FTP se conecta a essa porta para transferir os dados.</p>
+            <p>Modo Passivo: O servidor FTP abre uma porta e o cliente se conecta a essa porta para a transferência de dados. O modo passivo é geralmente usado quando o cliente está atrás de um firewall.</p>
+            <p>Comandos: O cliente FTP envia comandos para o servidor (por exemplo, LIST para listar arquivos, RETR para recuperar arquivos, STOR para armazenar arquivos).</p>
+            <p>Respostas: O servidor FTP responde aos comandos com códigos de status e mensagens.</p>
+        </div>
+    </section>
+    
+    <section class="desenvolvimento">
+        <h1>Características do FTP</h1>
+        <ul>
+            <li><strong>Transferência de Arquivos:</strong> Permite a transferência de arquivos grandes e múltiplos arquivos simultaneamente e suporta diferentes tipos de arquivos e estruturas de diretórios.</li>
+            <li><strong>Autenticação e Controle de Acesso:</strong> FTP pode ser configurado para permitir o acesso anônimo (sem autenticação) ou exigir credenciais de usuário e permite configurações detalhadas de permissões para usuários e grupos.</li>
+            <li><strong>Modos de Transferência:</strong> Modo Binário: Transfere arquivos em formato binário, preservando a integridade dos dados e Modo ASCII: Transfere arquivos de texto, convertendo os dados para o formato de texto apropriado para a plataforma de destino.</li>
+        </ul>
+    </section>
+    
+    <section class="desenvolvimento2">
+        <h1>Segurança no FTP</h1>
+        <ul>
+            <li><strong>FTP Sem Segurança (FTP):</strong> As transmissões são feitas em texto claro, o que significa que credenciais e dados podem ser interceptados por terceiros.</li>
+            <li><strong>FTP sobre SSL/TLS (FTPS):</strong> Adiciona uma camada de segurança ao FTP usando criptografia SSL/TLS para proteger a transmissão de dados.</li>
+            <li><strong>SFTP (SSH File Transfer Protocol):</strong> Um protocolo diferente que usa o SSH (Secure Shell) para criptografar a transferência de arquivos e fornece maior segurança do que o FTP tradicional.</li>
+        </ul>
+    </section>
+    
+    <section class="table">
+        <h1>Comandos FTP mais comuns</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Comandos</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>USER</td>
+                    <td>Fornece o nome de usuário para autenticação.</td>
+                </tr>
+                <tr>
+                    <td>PASS</td>
+                    <td>Fornece a senha para autenticação.</td>
+                </tr>
+                <tr>
+                    <td>LIST</td>
+                    <td>Lista os arquivos e diretórios no diretório atual.</td>
+                </tr>
+                <tr>
+                    <td>RETR</td>
+                    <td>Recupera (baixa) um arquivo do servidor.</td>
+                </tr>
+                <tr>
+                    <td>STOR</td>
+                    <td>Armazena (envia) um arquivo para o servidor.</td>
+                </tr>
+                <tr>
+                    <td>PWD</td>
+                    <td>Mostra o diretório de trabalho atual no servidor.</td>
+                </tr>
+                <tr>
+                    <td>CWD</td>
+                    <td>Muda o diretório de trabalho no servidor.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apache</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <!-- Certifique-se de que o caminho está correto -->
+  </head>
+  <body>
+    <section class="container">
+      <div class="text-content">
+        <h1>O que é Apache?</h1>
+        <p>
+          Apache é um servidor web de código aberto e gratuito, desenvolvido pela Apache Software Foundation. Ele é um dos servidores web mais populares do mundo e é amplamente utilizado para hospedar
+          websites na internet.
+        </p>
+        <p>Apache serve páginas web para usuários finais quando solicitado, atuando como intermediário entre os navegadores dos usuários e o conteúdo do servidor.</p>
+      </div>
+      <div class="text-content">
+        <h1>Como Funciona o Apache?</h1>
+        <p>
+          Apache funciona através de uma arquitetura modular, permitindo que os administradores de sistema ajustem e expandam suas funcionalidades conforme necessário. O processo básico de
+          funcionamento inclui:
+        </p>
+        <p>Recepção de Solicitações: Apache recebe solicitações HTTP/HTTPS de clientes (normalmente navegadores web).</p>
+        <p>
+          Processamento de Solicitações: Utiliza módulos configurados para processar essas solicitações. Isso pode incluir servir arquivos estáticos, como HTML e imagens, ou encaminhar solicitações
+          para outros programas que geram respostas dinâmicas (como scripts PHP, Python, etc.).
+        </p>
+        <p>Resposta aos Clientes: Após processar a solicitação, Apache envia a resposta de volta ao cliente, que pode ser uma página HTML, um arquivo de imagem, um documento, etc.p></p>
+      </div>
+    </section>
+
+    <section class="desenvolvimento">
+      <h1>Características do Apache</h1>
+      <ul>
+        <li><strong>Código Aberto:</strong>Gratuito e mantido por uma comunidade global de desenvolvedores.</li>
+        <li>
+          <strong>Modularidade:</strong> Apache é altamente modular, permitindo que funcionalidades sejam adicionadas ou removidas conforme necessário através de módulos como mod_ssl (para suporte
+          SSL/TLS), mod_rewrite (para reescrita de URL), e muitos outros.
+        </li>
+        <li><strong>Configuração Flexível:</strong> Suporte extensivo a configuração personalizada através de arquivos de configuração (como httpd.conf e .htaccess).</li>
+        <li><strong>Compatibilidade:</strong> Funciona em várias plataformas operacionais, incluindo Unix, Linux, Windows, e macOS.</li>
+        <li><strong>Segurança:</strong> Suporta várias funcionalidades de segurança, como autenticação de usuário, autorização, e criptografia.</li>
+        <li><strong>Desempenho:</strong>Embora não seja o mais rápido em todas as circunstâncias, Apache oferece um bom equilíbrio entre desempenho, flexibilidade e recursos.</li>
+        <li><strong>Suporte a Linguagens:</strong> Integração com várias linguagens de script como PHP, Perl, Python, etc.</li>
+      </ul>
+    </section>
+
+    <section class="desenvolvimento2">
+      <h1>Compatibilidade com Apache</h1>
+      <ul>
+        <li><strong>Sistemas Operacionais:</strong> Unix, Linux, Windows, macOS, etc.</li>
+        <li><strong>Linguagens de Programação:</strong> PHP, Perl, Python, Ruby, e muitas outras.</li>
+        <li><strong>Bancos de Dados:</strong> MySQL, PostgreSQL, SQLite, e outros bancos de dados relacionais e não relacionais.</li>
+        <li><strong> Outros Servidores Web:</strong>Pode trabalhar em conjunto com outros servidores web como Nginx, onde Apache pode atuar como servidor backend ou frontend.</li>
+      </ul>
+    </section>
+
+    <section class="table">
+      <h1>Comandos APACHE mais comuns</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Comandos</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Iniciar Apache</td>
+            <td>sudo systemctl start apache2</td>
+          </tr>
+          <tr>
+            <td>Parar Apache:</td>
+            <td>sudo systemctl stop apache2</td>
+          </tr>
+          <tr>
+            <td>Reiniciar Apache:</td>
+            <td>sudo systemctl restart apache2</td>
+          </tr>
+          <tr>
+            <td>Recarregar Configuração:</td>
+            <td>sudo systemctl reload apache2</td>
+          </tr>
+          <tr>
+            <td>Verificar Status do Apache:</td>
+            <td>sudo systemctl status apache2</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>

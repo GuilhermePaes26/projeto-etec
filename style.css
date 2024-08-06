@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("./ti.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.links a {
+  display: block;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  text-align: center;
+  flex: 1 1 calc(25% - 20px);
+  box-sizing: border-box;
+}
+
+.links a:hover {
+  background-color: #0056b3;
+}
