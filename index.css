@@ -1,12 +1,13 @@
 * {
     background-color: #428bb9;
-
+    margin: 0;
 }
 .introduction {
     display: flex;
     flex-direction: column;
     align-items: right;
     justify-content: center;
+    margin: 20px;
 } 
 p {
     font-family: "Poppins", sans-serif;
@@ -114,4 +115,17 @@ th {
 }
 .final p{
     width: 80%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20PX;
+    background-color: #0056b3;
+    margin: 0;
+}
+
+nav {
+    border: 2px solid #000000;
 }
